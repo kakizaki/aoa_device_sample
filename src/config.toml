@@ -1,0 +1,14 @@
+[accessory]
+manufacturer = "TEST_MANUFACTURERE"
+model_name = "TEST_MODEL"
+description = "試験デバイスです"
+version = "1.0"
+uri = ""
+serial_number = "0000000012345678" # 適当な値
+
+
+# aoa確立後の通信を別のスクリプトに委譲 
+#   以下の関数を実装してください
+#   def communicate(device: usb.core.Device, endpoint_in: usb.core.Endpoint, endpoint_out: usb.core.Endpoint, config_protocol: dict):
+[protocol]
+module = "aoa_loopback" 
